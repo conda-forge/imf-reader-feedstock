@@ -31,7 +31,7 @@ requirements:
     - filelock >=3.20
     - platformdirs >=4.5
     - pyarrow >=14.0
-    - requests-cache>=1.2
+    - requests-cache >=1.2
 
 tests:
   - python:
