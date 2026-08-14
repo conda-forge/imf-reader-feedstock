@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.10"
-  version: "1.5.0"
+  version: "2.0.1"
 
 package:
   name: imf-reader
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/imf-reader/imf_reader-${{ version }}.tar.gz
-  sha256: 131c8c68f96c37844fa8c38853e5dce98549d29eeda541379a2a0c5c3cb568ca
+  sha256: 6acbdf8cf8e07be158e61e15f9535467f02d15757b92c8d0c18b4dd244e19380
 
 build:
   number: 0
