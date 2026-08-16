@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "2.0.1"
+  version: "2.2.0"
 
 package:
   name: imf-reader
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/imf-reader/imf_reader-${{ version }}.tar.gz
-  sha256: 6acbdf8cf8e07be158e61e15f9535467f02d15757b92c8d0c18b4dd244e19380
+  sha256: 3f725d5759b0d78875833ee9a5c66cd27d61c31bd8a553ff71eee05b5e628b57
 
 build:
   number: 0
@@ -27,11 +27,14 @@ requirements:
     - pandas >=2.2.2
     - requests >=2.32.1
     - beautifulsoup4 >=4.12.3
-    - pyarrow >=14.0
+    - pyarrow >=16.0
     - readerkit >=0.1.0
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - imf_reader
   - requirements:
@@ -44,7 +47,7 @@ tests:
 about:
   summary: A package to access imf data
   license: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   homepage: https://pypi.org/project/imf-reader/
 
 extra:
